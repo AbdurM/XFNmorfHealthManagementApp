@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{83717F9B-6BE7-40C6-A682-833ABA9BC0D1}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="healthManagementSample/MainPage.xaml">
+    <Files>
+      <File FileName="healthManagementSample/CalendarModel.cs" Line="7" Column="43" IsPinned="True" />
+      <File FileName="healthManagementSample/MainPage.xaml" Line="62" Column="149" />
+      <File FileName="healthManagementSample/App.xaml" Line="5" Column="41" />
+      <File FileName="healthManagementSample/ReportViewModel.cs" Line="31" Column="86" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="healthManagementSample" expanded="True">
+            <Node name="healthManagementSample" expanded="True">
+              <Node name="MainPage.xaml" selected="True" />
+            </Node>
+            <Node name="healthManagementSample.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.healthManagementSample.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_3_xl_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.ItemProperties.healthManagementSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.04342A04-A9CC-410F-BD03-4CA1814398E7" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

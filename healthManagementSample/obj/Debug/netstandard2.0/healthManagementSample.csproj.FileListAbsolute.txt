@@ -1,0 +1,14 @@
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/bin/Debug/netstandard2.0/healthManagementSample.deps.json
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/bin/Debug/netstandard2.0/healthManagementSample.dll
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/bin/Debug/netstandard2.0/ref/healthManagementSample.dll
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/bin/Debug/netstandard2.0/healthManagementSample.pdb
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.csprojAssemblyReference.cache
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.AssemblyInfoInputs.cache
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.AssemblyInfo.cs
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.csproj.CoreCompileInputs.cache
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.dll
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/ref/healthManagementSample.dll
+/Users/abdur/Projects/healthManagementSample/healthManagementSample/obj/Debug/netstandard2.0/healthManagementSample.pdb

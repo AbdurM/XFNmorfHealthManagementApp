@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:neo="clr-namespace:Xamarin.Forms.NeoControls;assembly=Xamarin.Forms.NeoControls"
+             xmlns:local="clr-namespace:healthManagementSample"
+             mc:Ignorable="d"
+             x:Class="healthManagementSample.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:ReportViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
+        <StackLayout.Resources>
+            <Style TargetType="neo:NeoFrame">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="Elevation" Value="0.15"/>
+                <Setter Property="CornerRadius" Value="65"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="20,20"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style TargetType="Switch">
+                <Setter Property="OnColor" Value="{StaticResource CustomGreen}"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+
+
+
+        </StackLayout.Resources>
+
+        <neo:NeoFrame
+            Margin="10,50,10,0"
+            HeightRequest="60"
+            WidthRequest="60"
+            CornerRadius="40"
+            Elevation="0.15"
+            ShadowBlur="15"
+            VerticalOptions="Start"
+            HorizontalOptions="Start">
+
+            <Image Source="backArrow" HeightRequest="20" WidthRequest="30" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </neo:NeoFrame>
+
+        <neo:NeoFrame Margin="10,0,10,50" >
+
+            <StackLayout Padding="0">
+                <!--Top section-->
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start"  >
+                    <Label Text="Blood Pressure" FontSize="Large" VerticalOptions="Start" Margin="30,30,0,10"/>
+                    <Label Text="Normal" FontSize="Small" HorizontalOptions="EndAndExpand" TextColor="{StaticResource CustomGreen}" Margin="30,30,30,10"/>
+                </StackLayout>
+
+                <!--Second Nested Frame-->
+                <neo:NeoFrame Margin="0"  HorizontalOptions="FillAndExpand" >
+                    <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
+                        <StackLayout Spacing="0" >
+
+                            <Label Text="Report" Margin="30,30,20,10" FontSize="Large" VerticalOptions="Start" />
+
+
+                            <neo:NeoFrame HeightRequest="70" VerticalOptions="Start" Margin="15,10">
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text=">180mmhg"/>
+                                    <Label Text="Show Details" TextColor="{StaticResource SecondaryTextColor }" Margin="0" FontSize="Micro" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                                    <Switch  Margin="15,10" />
+                                </StackLayout>
+                            </neo:NeoFrame>
+
+                            <neo:NeoFrame HeightRequest="70" VerticalOptions="Start" Margin="15,10">
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="160~180mmhg"/>
+                                    <Label Text="Show Details" TextColor="{StaticResource SecondaryTextColor }" Margin="0" FontSize="Micro" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                                    <Switch  Margin="15,10" />
+                                </StackLayout>
+                            </neo:NeoFrame>
+                            <neo:NeoFrame Margin="15,10,15,0" HeightRequest="200" VerticalOptions="Start">
+                                <neo:NeoFrame Margin="10" CornerRadius="50" HeightRequest="180" VerticalOptions="Start" HorizontalOptions="Fill" ShadowDrawMode="InnerOnly">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="160~180mmhg" />
+                                        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Show Details" TextColor="{StaticResource SecondaryTextColor }" Margin="0,0,30,0" FontSize="Micro" HorizontalOptions="Center" HorizontalTextAlignment="Start"/>
+                                        <Switch Grid.Row="0" Grid.Column="2" Margin="15,10,10,15" />
+
+
+                                        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="153mmhg" TextColor="{StaticResource SecondaryTextColor }"/>
+                                        <Label Grid.Row="1" Grid.Column="2" Text="10:33" TextColor="{StaticResource SecondaryTextColor}" HorizontalTextAlignment="End"/>
+
+                                        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalTextAlignment="Start" Text="160~180mmhg" TextColor="{StaticResource SecondaryTextColor }"/>
+                                        <Label Grid.Row="2" Grid.Column="2" Text="10:35" HorizontalTextAlignment="End" TextColor="{StaticResource SecondaryTextColor }"/>
+
+                                    </Grid>
+                                </neo:NeoFrame>
+
+                            </neo:NeoFrame>
+
+
+                            <!--<neo:NeoFrame HeightRequest="70" VerticalOptions="Start" Margin="15,10">
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="160~180mmhg"/>
+                                    <Label Text="Show Details" TextColor="{StaticResource SecondaryTextColor }" Margin="0" FontSize="Micro" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                                    <Switch  Margin="15,10" />
+                                </StackLayout>
+                            </neo:NeoFrame>-->
+
+                        </StackLayout>
+                    </ScrollView>
+                </neo:NeoFrame>
+                <CollectionView
+                         HeightRequest="50"
+                         Margin="15,15"
+                         ItemsSource="{Binding CalendarList}"
+                         BackgroundColor="Transparent"
+                         HorizontalScrollBarVisibility="Never" >
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout HeightRequest="50" Spacing="5">
+                                <Label Text="{Binding Weekday}" Margin="10,0" HorizontalTextAlignment="Center" TextColor="{StaticResource SecondaryTextColor}" FontSize="Micro"/>
+                                <Label Text="{Binding MonthDay}" Margin="0,0" HorizontalTextAlignment="Center" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+
+
+        </neo:NeoFrame>
+    </StackLayout>
+
+</ContentPage>
